@@ -10,12 +10,7 @@ namespace CommicBookGallery.Controllers
     {
         public ActionResult Detail()
         {
-            if(DateTime.Today.DayOfWeek == DayOfWeek.Thursday)
-            {
-                return Redirect("/");
-            
-            }
-            return Content("Hello form the other side");
+            return View();
          
         }
 
