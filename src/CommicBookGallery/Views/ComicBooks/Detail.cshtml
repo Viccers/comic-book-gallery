@@ -1,8 +1,8 @@
 ﻿@model ComicBookGallery.Models.ComicBook
 @{
-    ViewBag.Title = "Comic Book Detail";
+    ViewBag.Title = Model.DisplayText;
 
-  
+
 }
 
 <h1>@Model.SeriesTitle</h1>
@@ -17,7 +17,7 @@
             @foreach (var artist in Model.Artists)
             {
                 <li>
-                    @artist;
+                    @artist.Role: @artist.Name;
                 </li>
             }
         </ul>
